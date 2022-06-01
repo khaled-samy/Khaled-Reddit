@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Reddit</title>
+</head>
+<body>
+    
+    <header class="home">
+        <a href="/" class="logo">
+            <img src="../assets/logo.png" style="width: 30px;">
+            <h1>Khaled Reddit</h1>
+        </a>
+        <form class="search">
+            <label id="search">
+                <input type="search" placeholder="Search here..." id="input-search">
+            </label>
+            <button type="submit">
+                <img src="../assets/search.jpg" style="width: 30px;">
+            </button>
+        </form>
+        <nav class="navbar">
+            <button id="name" class="username"></button>
+            <dev class="user-list">
+                <select id="browsers" onchange="location = this.value;">
+                    <option value="/user/profile">Profile</option>
+                    <option value="/user">Home</option>
+                    <option value="/user/log-out">sign out</option>
+                </select>
+            </dev>
+        </nav>
+    </header>
+
+<section class="options-user">
+    <button class="post-btn">POST</button>
+    <button class="comment-btn">COMMENTES</button>
+</section>
+<section class="right-profile">
+    <span class="user-background"></span>
+    <img class="user-img" src="../assets/user-img.png" style="width: 30px;">
+    <p class="user-name">Khaled</p>
+    <button id="open" class="add-post">NEW POST</button>
+    <dev class="post-container">
+        <form class="add-post-form">
+    <a id="" ><h1 class="close">&times;</h1></a>
+            <h2 class="add-post-title">Add a new post</h2>
+            <label for="title">Title
+                <input type="text" id="title" name="title" placeholder="add title post">
+            </label>
+            <label for="descreption">Descreption
+                <input type="text" id="description" name="description" placeholder="add descreption post">
+            </label>
+            <button type="submit" class="create-post-btn">Create Post</button>
+        </form>
+    </dev>
+</section>
+<section class="container">
+</section>
+
+<script src="../js/dom.js"></script>
+<script type="module" src="../js/fetch/getAllPostsUser.js"></script>
+<script type="module" src="../js/deletePost.js"></script>
+<script type="module" src="../js/postPost.js"></script>
+</body>
+</html>

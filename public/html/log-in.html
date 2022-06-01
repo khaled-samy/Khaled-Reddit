@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+</head>
+<body>
+
+    <header class="home">
+        <a href="/" class="logo">
+            <img src="../assets/logo.png" style="width: 30px;">
+            <h1>Khaled Reddit</h1>
+        </a>
+        <form class="search">
+            <label id="search">
+                <input type="search" placeholder="Search here..." id="input-search">
+            </label>
+            <button type="submit">
+                <img src="../assets/search.jpg" style="width: 30px;">
+            </button>
+        </form>
+        <nav class="navbar">
+            <a href="" id="">sign up</a>
+            <a href="" id="">log in</a>
+            <button class="username">Khaled</button>
+            <dev class="user-list">
+                <a href="" class="home-page">Home</a>
+                <a href="" class="profile">Profile</a>
+                <a href="" class="signs-out"></a>
+            </dev>
+        </nav>
+    </header>
+
+    <form id="log-in" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Log In</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="user-name"><b>User Name</b></label>
+          <input id="username" type="text" placeholder="Enter user name" name="user-name" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+    
+            <button type="submit" class="signupbtn">Log In</button>
+
+        </div>
+      </form>
+
+      <script type="module" src="../js/login.js" defer></script> 
+</body>
+</html>
